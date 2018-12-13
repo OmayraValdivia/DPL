@@ -10,9 +10,9 @@ module.exports = {
   },
   //Añadir un feedback
   addFeedback(req, res ,store) {
-    let newPost = req.body
+    let newFeedback = req.body
     let id = store.feedback.length
-    store.feedback.push(newPost)
+    store.feedback.push(newFeedback)
     res.status(201).send({feedbackId: id})
   },
   //Actualizar un feedback

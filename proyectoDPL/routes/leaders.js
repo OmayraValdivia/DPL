@@ -10,9 +10,9 @@ module.exports = {
   },
   //Añadir un leader
   addLeader(req, res ,store) {
-    let newPost = req.body
+    let newLeader = req.body
     let id = store.leaders.length
-    store.leaders.push(newPost)
+    store.leaders.push(newLeader)
     res.status(201).send({leaderId: id})
   },
   //Actualizar un leader

@@ -10,9 +10,9 @@ module.exports = {
   },
   //Añadir un promotion
   addPromotion(req, res ,store) {
-    let newPost = req.body
+    let newPromotion = req.body
     let id = store.promotions.length
-    store.promotions.push(newPost)
+    store.promotions.push(newPromotion)
     res.status(201).send({promotionId: id})
   },
   //Actualizar un promotion

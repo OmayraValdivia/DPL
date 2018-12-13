@@ -10,9 +10,9 @@ module.exports = {
   },
   //Añadir un dish
   addDish(req, res ,store) {
-    let newPost = req.body
+    let newDish = req.body
     let id = store.dishes.length
-    store.dishes.push(newPost)
+    store.dishes.push(newDish)
     res.status(201).send({dishId: id})
   },
   //Actualizar un dish
